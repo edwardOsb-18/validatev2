@@ -9,7 +9,7 @@ const {titulo,sub}=Astro.props
 
 
 <div class="w-full max-w-[400px] bg-white rounded-lg s p-6 ss">
-  <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Contáctanos</h2> 
+  <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center  xl:mb-9">Contáctanos</h2> 
 
   <form class="flex flex-col " id="form">
     <input type="text" class="bg-gray-100 hidden text-gray-800 as rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Nombres y apellidos" name="emailjs_titulo">
@@ -26,7 +26,7 @@ const {titulo,sub}=Astro.props
 
     <!-- <input type="submit"  id="button" value="Enviar" class="text-white bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base w-full  px-5 py-2.5 text-center cursor-pointer block  mx-auto"> -->
 
-    <input type="submit"  id="button" value="Enviar" class="bg-[#030712] text-white font-bold  px-5 py-5 rounded-[.75rem] text-lg mt-4 hover:bg-[#030712ee]  gap-3 group block">
+    <input type="submit"  id="button" value="Enviar" class="bg-[#030712] text-white font-bold  px-4 py-4 rounded-[.75rem] text-lg mt-4 hover:bg-[#030712ee]  gap-3 group block">
       <figure id="loader" style="display:none" class="mx-auto w-[25%] mt-8">
         <img src="/loader.svg" alt="">
       </figure>
@@ -83,5 +83,49 @@ document.getElementById('form')
     border: 1.5px solid #ecedec;
     background-color: white;
   }
-  .ss{box-shadow: 2px 5px 9px -1px #ee3c5f;}
+
+  @keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+  .ss{}
+  .title {
+
+  color: black;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: black;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
 </style>
