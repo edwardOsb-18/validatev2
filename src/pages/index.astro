@@ -1,0 +1,858 @@
+---
+
+import Estructura from "../layouts/Estructura.astro"
+import HeaderSecundario from "../components/HeaderSecundario.astro"
+
+ import Footer from "../components/Footer.astro"
+
+import BotonFantasma from "../components/BotonFantasma.astro"
+import Botones from "../components/Botones.astro"
+import Caractersiticas from "../components/Caractersiticas.astro"
+import Soluciones from "../components/Soluciones.astro"
+import Preguntas from "../components/Preguntas.astro"
+import PlanesP from "../components/PlanesP.astro"
+import SolucionesItem from "../components/SolucionesItem.astro"
+import CardV from "../components/CardV.astro"
+ 
+
+
+---
+
+<Estructura>
+
+<HeaderSecundario slot="header"></HeaderSecundario>
+
+
+
+
+<div slot="main">
+
+
+
+
+<div  class="flex flex-col gap-16 p-4 pt-8 xl:p-0 xl:flex-row justify-center max-w-[1300px] mx-auto xl:pt-16 items-center" >
+
+  <div class="flex flex-col gap-2 xl:flex-1">
+  <p class="uppercase ne flex items-center text-primary gap-4 font-medium text-[1rem]">Protege tu negocio</p>
+  <h2 class="text-[2rem] font-bold xl:text-[3.5rem] text-[#273043] leading-tight  xl:text-start">La forma más simple de prevenir pérdidas</h2>
+ 
+  <!-- <ul class="mb-5 ">
+    <li class="list__item">Localiza tu vehículo.</li>
+    <li class="list__item">Apágalo en caso de emergencia.</li>
+    <li class="list__item">Revisa el historial de movimientos.</li>
+    <li class="list__item">Incluye un micrófono espía.</li>
+    <li class="list__item">Retransmisión con la Superintendencia de Transporte Terrestre (SUTRAN).</li>
+  </ul> -->
+  
+  <!-- <Botones link="#" title="Solicitar una Demo"></Botones> -->
+  <p class="text-[#6b7280] text-[1.05rem] font-medium leading-7	 mt-4">Facilitamos la detección de Perfiles de Riesgo en tu negocio automatizando tareas manuales con <span class="text-primary font-bold">Inteligencia Artificial.</span> </p>
+
+  <a href="" class="bg-[#030712] text-white font-bold w-[fit-content] px-5 py-5 rounded-[.75rem] text-lg mt-10 hover:bg-[#030712ee] flex gap-3 group">Comienza ahora
+
+    <svg class="group-hover:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 transition-all duration-200 group-hover:translate-x-1"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+
+  </a>
+  </div>
+  
+  
+  
+  <figure class="flex-1">
+  
+    <img src="/p.svg" alt="">
+  </figure>
+  
+  
+  
+  </div>
+
+
+</div>
+
+
+  <div id="preguntas" class="preguntas flex flex-col gap-5  py-8  p-6 xl:py-20 bg-white" slot="main">
+
+    <div class="max-w-[1300px] xl:mx-auto flex gap-6 flex-col xl:flex-row ">
+    
+    <div class="xl:w-[93%]">
+
+
+      <div  class="flex flex-col gap-16 px-0 pt-12 xl:p-0 xl:flex-row justify-center max-w-[1300px] mx-auto xl:pt-16 items-center" >
+
+        <div class="flex flex-col gap-2 xl:flex-1">
+        <p class="uppercase ne flex items-center text-primary gap-4 font-medium text-[1rem]">Productos</p>
+        <h2 class="text-[1.9rem] font-bold xl:text-[2.2rem] text-[#273043] leading-tight  xl:text-start">Potencia tu negocio de manera simple con nuestras soluciones especializadas.</h2>
+       
+      
+        <p class="text-[#6b7280] text-[1rem] font-medium leading-6	 mt-4">Individualmente nuestros productos son poderosos, pero puedes usarlos juntos y crear una experiencia mucho más robusta.</p>
+<!--       
+        <a href="" class="bg-[#030712] text-white font-bold w-[fit-content] px-5 py-5 rounded-[.75rem] text-lg mt-10 hover:bg-[#030712ee] flex gap-3 group">Comienza gratis
+      
+          <svg class="group-hover:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 transition-all duration-200 group-hover:translate-x-1"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+      
+        </a> -->
+        <div class="mt-8 flex flex-col  md:inline-flex items-start"><span class="text-5xl font-bold leading-none text-primary md:text-6xl">+3.5M</span><span class="text-base font-bold leading-none text-primary-950 md:text-base pl-4">Consultas atendidas</span></div>
+        </div>
+        
+        
+        
+    
+        
+        
+        
+        </div>
+
+
+
+
+    </div>
+    
+    <div class="flex- flex flex-col gap-4">
+<div class="flex flex-col xl:flex-row gap-4">
+<CardV titulo="Validación de datos personas y empresas" descripcion="Verifica la información de tus clientes, reduce el riesgo de pérdidas en tus operaciones con una comprobación de datos." url="/uno.svg" link="#"></CardV>
+
+
+<CardV titulo="Validación Digital de Identidad" descripcion="Simplifica y digitaliza el proceso de validación de identidad de tus usuarios y asegúrate de conocer quién está tras el teclado." url="/dos.svg" link="#"></CardV>
+
+</div>
+
+
+
+<div class="flex gap-4 flex-col xl:flex-row">
+  <CardV titulo="Algoritmo de consistencia y coherencia de datos" descripcion="Verifica la validez de los datos de tus usuarios en tus procesos de registro y onboarding." url="/tres.svg" link="#"></CardV>
+  
+  
+  <CardV titulo="Identificación de Visitantes" descripcion="Descubre que miraban los visitantes antes de registrarse. Reconoce quién posee más de una cuenta. Obtén analítica y metadata sobre tus visitantes y usuarios." url="/cuatro.svg" link="#"></CardV>
+  
+  </div>
+
+
+    </div>
+        
+        
+    
+    
+    </div>
+    </div>
+
+
+
+    <div slot="main">
+
+
+
+
+      <div  class="flex flex-col gap-16 p-4 pt-12 xl:p-0 xl:flex-row justify-center max-w-[1300px] mx-auto xl:pt-16 items-center" >
+      
+        <div class="flex flex-col gap-2 xl:flex-1 order-2">
+        <p class="uppercase ne flex items-center text-primary gap-4 font-medium text-[1rem]">Construyamos juntos</p>
+        <h2 class="text-[2rem] font-bold xl:text-[3rem] text-[#273043] leading-tight  xl:text-start">¿Eres una Startup?
+          Integra sin costo</h2>
+       
+        <!-- <ul class="mb-5 ">
+          <li class="list__item">Localiza tu vehículo.</li>
+          <li class="list__item">Apágalo en caso de emergencia.</li>
+          <li class="list__item">Revisa el historial de movimientos.</li>
+          <li class="list__item">Incluye un micrófono espía.</li>
+          <li class="list__item">Retransmisión con la Superintendencia de Transporte Terrestre (SUTRAN).</li>
+        </ul> -->
+        
+        <!-- <Botones link="#" title="Solicitar una Demo"></Botones> -->
+        <p class="text-[#6b7280] text-[1.05rem] font-medium leading-7	 mt-4">Comienza a prevenir pérdidas en tu Startup y protege tu negocio. Ofrecemos un plan de trabajo sin costo para Startups.</span> </p>
+      
+        <a href="" class="bg-[#030712] text-white font-bold w-[fit-content] px-5 py-5 rounded-[.75rem] text-lg mt-10 hover:bg-[#030712ee] flex gap-3 group">Comienza ahora
+      
+          <svg class="group-hover:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 transition-all duration-200 group-hover:translate-x-1"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+      
+        </a>
+        </div>
+        
+        
+        
+        <figure class="flex-1">
+        
+          <img src="/p2.svg" alt="">
+        </figure>
+        
+        
+        
+        </div>
+      
+      
+      </div>
+
+
+
+
+
+		
+
+
+
+<div  slot="footer" class="bg-white mt-36">
+  <Footer ></Footer>
+</div>
+ 
+
+
+
+
+
+</Estructura>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+	.grupo__osb{
+		background-image: linear-gradient(rgb(2, 122, 255), rgb(29, 78, 216), rgb(30, 58, 138));
+	}
+
+.efecto{
+	/* clip-path: ellipse(20% 20% at 50% 0); */
+	clip-path: ellipse(0% 0% at 50% 0);
+	transition: clip-path 1.8s .1s;
+
+}
+
+
+.uno,.dos,.tres,.cinco,.seis,.siete,.cuatro,#siete,#ocho{
+	transform: translateY(200px);
+	opacity: 0;
+	transition: transform 1s,opacity 1s;
+}
+
+
+	.comparacion{
+		background-color: rgba(122, 252, 209, 0.055);
+		
+	}
+	.swiper-slide.nuevo img{
+		width: 386px;
+	}
+	.plan,.comparacion,.osb5{
+		background-image: url("/fondonew.svg");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-bottom: 2.5rem;
+		/* max-width: 1300px;
+margin-inline: auto; */
+	}
+	.swiper-slide{
+		background: transparent;
+	}
+	.swiper-slide[data-astro-cid-j7pv25f6].nuevo img[data-astro-cid-j7pv25f6]{
+		width:1000px;
+	}
+
+
+
+
+
+
+
+
+	.confian{
+               
+			
+			   }
+			   
+			   .confian__img{
+			
+			   }
+			   @media screen and (min-width: 1200px) {
+				 .confian {
+				max-width: 1334px;
+				margin-inline: auto;
+				
+				 }
+			   }
+			   
+			   
+			   .confian__titulo{
+			   
+			   text-align: center;
+			   font-size: 1.5rem;
+			   margin-bottom: 0rem;
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   @media screen and (min-width: 1200px) {
+				 .confian__titulo {
+				  font-size: 2rem;
+				  line-height: 2.25rem;
+				  margin-top: 4rem;
+				  color: #10215b
+				 }
+			   }
+			   
+			   
+			   .confian__t{
+			 
+			   }
+			   
+			   
+			   .confian__logos{
+			 
+			   display: flex;
+			   flex-wrap: wrap;
+			   justify-content: center;
+			   }
+			   
+			   
+			   .confian__thumb{
+			
+				width:30%;
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   @media screen and (min-width: 1200px) {
+				 .confian__thumb {
+					
+				 }
+
+				 .swiper.mySwiper.osbu{
+					margin-top: -9rem;
+				 }
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   .confian__img{
+			   
+			   }
+
+
+
+
+
+			   			   
+			   .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: 'Avalors Personal Use';
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+			   
+.item{
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+input:not(input[type='submit']){
+	border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-top: .4rem;
+    padding: .3rem;
+    transition: all .25s ease-in-out;
+}
+label{
+	font-size: 1rem;
+	font-weight: 500;
+	color: #111439;
+}
+video{
+	/* clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0); */
+}
+
+.list__item{
+display: flex;
+align-items: center;
+}
+.list__item::before{
+	content: "";
+	display: block;
+	background-image: url(/check.svg);
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+}
+
+.ne{
+  letter-spacing: .25rem;
+}
+.ne::before{
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1.5px;
+  background-color: #ee3c5f;
+
+}
+</style>
+
+
+
+
+<script>
+  document.addEventListener("click",(e)=>{
+      const uno=e.target as HTMLElement
+     
+      const f=document.querySelector("form") as HTMLFormElement
+      console.log(uno)
+  if(uno.matches("#uno h3") || uno.matches("#uno img") ){
+    console.log("unoo")
+      const flecha=document.querySelector("#uno img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#uno p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  
+  
+  else if(uno.matches("#dos h3") || uno.matches("#dos img") ){
+    console.log("doso")
+      const flecha=document.querySelector("#dos img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#dos p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  
+  else if(uno.matches("#tres h3") || uno.matches("#tres img") ){
+    console.log("treso")
+      const flecha=document.querySelector("#tres img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#tres p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  
+  else if(uno.matches("#cuatro h3") || uno.matches("#cuatro img") ){
+    console.log("cuatroo")
+      const flecha=document.querySelector("#cuatro img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#cuatro p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  else if(uno.matches("#cinco h3") || uno.matches("#cinco img") ){
+    console.log("cincoo")
+      const flecha=document.querySelector("#cinco img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#cinco p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  
+  
+  else if(uno.matches("#seis2 h3") || uno.matches("#seis2 img") ){
+    console.log("seiso")
+      const flecha=document.querySelector("#seis2 img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#seis2 p") as HTMLElement
+  
+     el.classList.toggle("ver")
+     console.log("innnnnn")
+  }
+  
+  
+  
+  
+   else if(uno.matches("#once h3") || uno.matches("#siete img") ){
+     console.log("sieteo")
+       const flecha=document.querySelector("#once img") as HTMLElement
+       flecha.classList.toggle("rotacion")
+      const el= document.querySelector("#once p") as HTMLElement
+  
+      el.classList.toggle("ver")
+   }
+  
+  
+  
+   else if(uno.matches("#doce h3") || uno.matches("#doce img") ){
+     console.log("doceo")
+       const flecha=document.querySelector("#doce img") as HTMLElement
+       flecha.classList.toggle("rotacion")
+      const el= document.querySelector("#doce p") as HTMLElement
+  
+      el.classList.toggle("ver")
+   }
+  
+
+
+
+
+
+
+
+  else if(uno.matches("#trece h3") || uno.matches("#trece img") ){
+    console.log("ochoo")
+      const flecha=document.querySelector("#trece img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#trece p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+
+
+
+  else if(uno.matches("#catorce h3") || uno.matches("#catorce img") ){
+    console.log("ochoo")
+      const flecha=document.querySelector("#catorce img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#catorce p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+
+
+
+  else if(uno.matches("#quince h3") || uno.matches("#quince img") ){
+    console.log("ochoo")
+      const flecha=document.querySelector("#quince img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#quince p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+
+
+  else if(uno.matches("#diesiceis h3") || uno.matches("#diesiceis img") ){
+    console.log("ochoo")
+      const flecha=document.querySelector("#diesiceis img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#diesiceis p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  // else if(uno.matches("#mensual")){
+  
+  //     const mensual=document.getElementById("mensual") as HTMLElement
+  //     const anual=document.getElementById("anual") as HTMLElement
+  
+  //     mensual.classList.toggle("act")
+  //     anual.classList.remove("act")
+  // }
+  
+  
+  // else if(uno.matches("#anual")){
+  
+  // const mensual=document.getElementById("mensual") as HTMLElement
+  // const anual=document.getElementById("anual") as HTMLElement
+  
+  // anual.classList.toggle("act")
+  // mensual.classList.remove("act")
+  // }
+  
+  
+  // else if(uno.matches("#mostrar")){
+  // e.preventDefault()
+  // const todo=document.getElementById("mostrarTodo") as HTMLElement
+  
+  // // todo.style.overflow="auto"
+  // // todo.style.height="4460px"
+  // // uno.textContent="ver menos"
+  
+  
+  // if(uno.textContent==="Ver menos módulos"){
+  //     todo.style.height="630px"
+  //     console.log("-")
+  //     uno.textContent="Ver más módulos"
+  // }
+  // else if(uno.textContent==="Ver más módulos"){
+     
+  // todo.style.height="4460px"
+  // uno.textContent="Ver menos módulos"
+  // console.log("+")
+  // }
+  // }
+  
+  
+  })
+  
+    
+  //   const uno=document.getElementById("uno") as HTMLElement
+  // const dos=document.getElementById("dos") as HTMLElement
+  // const tres=document.getElementById("tres") as HTMLElement
+  // const cuatro=document.getElementById("cuatro") as HTMLElement
+  //  const cinco=document.getElementById("cinco") as HTMLElement
+  // const seis=document.getElementById("seis") as HTMLElement
+  //  const siete=document.getElementById("siete") as HTMLElement
+  // window.addEventListener("scroll",(e)=>{
+  //     let scrollPos = window.scrollY + window.innerHeight;
+  //     // let elementoPos = headerMain.offsetTop + headerMain.offsetHeight / 1.5;
+  //   let elementoUno = uno.offsetTop + uno.offsetHeight / 1.5;
+  //   let elementoDos = dos.offsetTop + uno.offsetHeight / 1.5;
+  //   let elementoTres = tres.offsetTop + uno.offsetHeight / 1.5;
+  //   let elementoCuatro = cuatro.offsetTop + uno.offsetHeight / 1.5;
+  //   let elementoCinco = cinco.offsetTop + uno.offsetHeight / 1.5;
+  //    let elementoSeis = seis.offsetTop + uno.offsetHeight / 1.5;
+  //   //  let elementoSiete = siete.offsetTop + uno.offsetHeight / 1.5;
+  //   // let elementoOcho = ocho.offsetTop + uno.offsetHeight / 1.5;
+  //   // let elementoSiete = siete.offsetTop + uno.offsetHeight / 1.5;
+  // // console.log(scrollY,elementoPos)
+    
+  
+  
+    
+  //   if(scrollPos > elementoUno){
+  //     // uno.style.transform="translateY(0)"
+  //     // uno.style.opacity="1"
+  //   }
+  
+  
+  
+  //   if(scrollPos > elementoDos){
+  //     // dos.style.transform="translateY(0)"
+  //     // dos.style.opacity="1"
+  //   }
+  
+  
+  
+  
+  //   if(scrollPos > elementoTres){
+  //     tres.style.transform="translateY(0)"
+  //     tres.style.opacity="1"
+  //   }
+  
+  
+  //   if(scrollPos > elementoCuatro){
+  //     cuatro.style.transform="translateY(0)"
+  //     cuatro.style.opacity="1"
+  //   }
+  
+  
+  
+  //    if(scrollPos > elementoCinco){
+  //    	cinco.style.transform="translateY(0)"
+  //    	cinco.style.opacity="1"
+  //    }
+  
+  
+  
+  //     if(scrollPos > elementoSeis){
+  //     	seis.style.transform="translateY(0)"
+  //     	seis.style.opacity="1"
+  //     }
+  
+  
+  
+  
+  
+  //   // if(scrollPos > elementoSiete){
+  //   // 	siete.style.transform="translateY(0)"
+  //   // 	siete.style.opacity="1"
+  //   // }
+  
+  
+  
+  //   // if(scrollPos > elementoOcho){
+  //   // 	ocho.style.transform="translateY(0)"
+  //   // 	ocho.style.opacity="1"
+  //   // }
+  
+  //   // if(scrollPos > elementoSiete){
+  //   // 	siete.style.transform="translateY(0)"
+  //   // 	siete.style.opacity="1"
+  //   // }
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  // })
+  
+  
+  </script>

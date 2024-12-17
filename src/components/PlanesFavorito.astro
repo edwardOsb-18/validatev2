@@ -1,0 +1,480 @@
+---
+ interface Props {
+ 	title: string;
+	mensual ?:string;
+	anual?:string;
+	caracteristicas:string[]
+ }
+
+ const { title ,mensual,anual,caracteristicas} = Astro.props;
+---
+
+<div class="planes__card border-[1px] pb-8 m-4 overflow-hidden border-[#022f3660] rounded-3xl ">
+    <div class="planes__header pt-0"><h3 class="planes__sub">Plan  {title} </h3>
+        <div class="planes__precio">
+            <p class="planes__precio-texto"><span class="planes__s">{mensual ?"S/":""}</span> <span class="planes__cantidad">{mensual}</span> <span class="planes__tipo">{mensual ?"Mensual + IGV":""}</span></p>
+			<p class="planes__precio-texto"><span class="planes__s">{anual ?"S/":""}</span> <span class="planes__cantidad">{anual}</span> <span class="planes__tipo leading-4 w-[86px]">
+             {anual ?"Anual + IGV ":""}   </span></p>
+        </div></div>
+   
+        <p class="pt-4 px-2 text-[15px]">Emite facturas, boletas, nota de crédito, guías, cotización y otros documentos</p>
+
+        <ul class="planes__items">
+
+			{  caracteristicas.map((i)=> <li class="planes__item">{i}
+                </li> ) }
+
+           
+        
+
+            
+        </ul>
+
+		
+
+
+
+		<div class="planes__pagar">
+<!-- <div class="grupo__pago">
+	<p class="total">Pago total inicial</p>
+	<div class="pagar1">
+		<p class="valor">{mensual } Mensual</p>
+		<p>Monto+ IGV</p>
+
+	</div>
+<div class="pagar1">
+	<p class="valor">{ anual}<span>Anual</span></p>
+	<p>Monto+ IGV</p>
+</div>
+	
+</div> -->
+			
+<a href="" class="pago__link p-3 text-white rounded-2xl bg-[#5543bf] border-2 border-style block mx-auto w-[150px] text-[18px]">Contratar</a> 
+
+		</div>
+</div>
+
+
+
+<style>
+
+.planes__header{
+    /* background-image: url(../img/fondos/cardFondo.svg)
+    ; */
+	background-color: #5543bf;
+    background-size: cover;
+    padding: 1.8rem;
+    padding-top: 1rem;
+    /* clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%); */
+    transition: clip-path .5s;
+
+}
+@media screen and (min-width:1200px) {
+    .planes__header{
+        padding-top: 0;
+    }
+}
+.preguntas__explayadas-content.dos,
+.preguntas__explayadas-content.tres{
+    display: none;
+}
+
+.preguntas__explayadas-titulo{
+    color: #7F8FA4;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.preguntas__subtitulo{
+
+}
+.planes{
+  border-top: 1.5px dashed rgba(255, 255, 255, 0.603);
+
+background-image: url(../img/fondos/ShinyOverlay.svg);
+background-attachment: fixed;
+padding: 1rem;
+background-size: cover;
+}
+.planes__titulo{
+font-size: 1.5rem;
+text-align: center;
+
+}
+
+.planes__uno{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+}
+
+	
+.planes__card{
+    background-color: #ffffff;
+    text-align: center;
+margin-bottom: 2rem;
+    border-radius: 15px;
+color: #717787;
+
+
+}
+
+
+
+.planes__card__movil .planes__card {
+    height: 478px;
+  }
+
+  .planes__card__movil .planes__card.a {
+    height: 270px;
+  }
+
+.planes__sub{
+    
+    letter-spacing: 0.03em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-inline: auto;
+margin-block: 0;
+    max-width: 320px;
+    padding-bottom: 0;
+	margin-bottom: 1rem;
+}
+
+
+
+
+.planes__precio{
+
+ 
+    line-height: 0.7;
+    font-size: 2.5rem;
+   
+margin-inline: auto;
+color: white;
+      
+    max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+
+
+.planes__precio-texto{
+display: flex;
+justify-content: center;
+
+
+}
+.m{
+    margin-right: 33px;
+}
+
+.planes__s{
+
+    font-size: .8rem;
+}
+
+.planes__cantidad{
+
+
+}
+
+
+.planes__tipo{
+    font-size: .8rem;
+    align-self: flex-end;
+}
+
+
+.planes__descripcion{
+font-size: 1rem;
+width: 90%;
+max-width: 320px;
+margin-inline: auto;
+margin-bottom: 0;
+
+}
+
+.planes__items{
+    padding: 15px;
+    font-size: 0.9rem;
+  list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    line-height: 1.5;
+    
+    margin-block: 0;
+}
+
+.planes__item::after{
+    content: " ";
+  
+    order: -1;
+   
+    
+    margin-right: .8rem;
+    width: 18px;
+height: 18px;
+background-image: url(../img/icon/checks.svg);
+background-size: 18px;
+background-position: center;
+
+}
+
+.planes__item{
+    display: flex;
+}
+
+.planes__t{
+    text-align: center;
+    color: var;
+    font-size: 1rem;
+    color: var(--fontUltimo);
+    font-weight: bold;
+}
+
+
+.a{
+    padding-bottom: 1.5rem;
+}
+.no{
+text-align: end;
+color: red;
+font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .planes__card:nth-child(3) .planes__header{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+  }
+
+
+
+  .planes__card:nth-child(4) .planes__header{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    } */
+
+.planes__card{
+
+
+}
+
+
+.swiper-slide.swiper-slide-active{
+  background-color: #80808014;
+}
+
+.card__puntuacion{
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.ab{
+  display: none;
+}
+
+@media screen and (min-width:1200px){
+
+
+  .empresa__parrafo-contenido{
+    font-size: 1.05rem;
+
+  }
+  .empresa__aside{
+    position: relative;
+    right: 100px;
+  }
+.empresa__grupo1{
+  justify-content: space-between;
+}
+  .empresa__resumen{
+    display: none;
+  }
+  .swiper.mySwiper.planes__card__movil{
+  display: none;
+  }
+  
+
+.planes__t{
+   
+    font-size: 1.3rem;
+  
+
+}
+
+
+
+.preguntas__subtitulo{
+ font-size: 1.1rem;   
+}
+
+    .planes{
+display: block;
+
+    }
+    .planes__titulo{
+    
+    font-size: 2.2rem;
+    }
+    
+    .planes__uno{
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 1334px;
+    margin-inline: auto;
+    display: flex;
+    
+    }
+    
+    .planes__card{
+    transition: transform .3s ;
+        position: relative;
+        width: 31%;
+overflow: hidden;
+        display: inline-block;
+       
+        
+      
+    }
+
+    
+@media screen and (min-width:1200px){
+
+    .planes__card{
+  width: 344px;
+    }
+
+}
+
+
+
+    .planes__card::before{
+        content: " ";
+        display: block;
+        height: 15px;
+        position: absolute;
+        width: 100%;
+        background-image: linear-gradient(to right, var(--fontUltimo),rgba(0, 0, 0, 0.692));
+        top: 0px;
+        left: 0;
+z-index: -1;
+border-radius: 3px;
+    }
+    
+    
+    .planes__sub{
+        padding: 30px 0px;
+        padding-bottom: 0;
+    }
+    
+    
+    
+    
+    .planes__precio{
+    
+        padding: 05px 0px;
+    }
+    
+    
+    
+    .planes__precio-texto{
+    
+    
+    }
+    
+    
+    .planes__s{
+    
+    
+font-size: .8rem;
+    }
+    
+    .planes__cantidad{
+    
+    
+    }
+    
+    
+    .planes__tipo{
+    
+    
+font-size: .8rem;
+    }
+    
+    
+    .planes__descripcion{
+    
+    margin-top: 1.5rem;
+   font-size: .9rem;
+    }
+    
+    .planes__items{
+font-size: 1rem;
+padding: 14px;
+    }
+    
+    .planes__item{
+      
+    
+    }
+    
+
+    .planes__card:hover{
+        transform: scale(1.02);
+    }
+
+
+
+    .planes__card:hover .planes__header{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+
+
+
+
+
+
+.planes__complementos{
+	font-size: 16px;
+	padding: 1.7rem;
+	padding-top: 0;
+}
+
+.grupo1{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	margin-bottom: .5rem;
+}
+span{
+	display: block;
+}
+h2{
+	text-align: start;
+}
+
+
+.pago__link:hover{
+background-color: white;
+color: var(--tres);
+border-color: var(--tres);
+transition: background .5s;
+font-weight: bold;
+}
+</style>

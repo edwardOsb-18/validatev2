@@ -1,0 +1,15 @@
+---
+interface Props {
+    titulo:string
+    descripcion:string
+    img:string
+}
+
+const {titulo,descripcion,img}=Astro.props
+---
+
+<div class="text-white flex flex-col items-center gap-1 flex-1 text-center">
+    <figure><img src={img} class="w-[65px]" alt=""></figure>
+    <h3 class="uppercase font-bold tex-[1.1rem]">{titulo}</h3>
+    <p>{descripcion}</p>
+</div>
